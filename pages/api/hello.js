@@ -30,10 +30,17 @@ export default (req, res) => {
   // let config = isGET ? req.query : req.body;
   // let response;
   // let host = 'ya.ru';
-  // let check = axios.get(host).then((response) => response.status);
+  // let check = axios.get(host).then((response) => response.status);7
   // console.log(check);
+
+  let host = '85.21.168.227',
+    port = 5445;
+  let status = axios
+    .get('http://' + host + ':' + port, { cors: false })
+    .then((res) => res);
+  console.log(status);
   let response = [];
-  res.status(200).json({ ...response });
+  res.status(200).json({ ...status.headers });
 };
 
 // Check if google.com accepts connections to port 8080

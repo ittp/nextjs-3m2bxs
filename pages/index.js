@@ -1,3 +1,4 @@
+import axios from 'axios';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
@@ -9,9 +10,6 @@ let config = {
   },
 };
 
-
-
-
 export function Items(data) {
   return data.map((item, key) => {
     let html = <div>{item.ip}</div>;
@@ -19,12 +17,18 @@ export function Items(data) {
     return html;
   });
 }
+// let isOnline = require('is-online');
+let {
+  checkPortStatus,
+  findAPortInUse,
+  findAPortNotInUse,
+} = require('portscanner');
 
-export default function Home() {
+export default function Home({ ctx }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Status</title>
       </Head>
       <main>
         <section className={styles.footer}>Loading...</section>
