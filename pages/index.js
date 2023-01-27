@@ -9,6 +9,9 @@ let config = {
   },
 };
 
+
+
+
 export function Items(data) {
   return data.map((item, key) => {
     let html = <div>{item.ip}</div>;
