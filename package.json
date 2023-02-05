@@ -15,10 +15,13 @@
     "net": "^1.0.2",
     "next": "^13.0.6",
     "node-nmap": "^4.0.0",
+    "ping": "^0.4.2",
     "ping-net-check": "^1.2.1",
     "portscanner": "^2.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "shelljs": "^0.8.5",
+    "tcp-ping": "^0.1.1",
     "test-port": "^1.2.0"
   }
 }
