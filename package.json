@@ -8,12 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "antd": "^5.1.6",
+    "@ant-design/icons": "^5.0.1",
+    "antd": "^5.1.7",
     "antd-data-table": "^1.0.1",
     "axios": "^1.2.5",
     "is-online": "^10.0.0",
     "net": "^1.0.2",
     "next": "^13.0.6",
+    "node-dns": "^0.1.0",
     "node-nmap": "^4.0.0",
     "ping": "^0.4.2",
     "ping-net-check": "^1.2.1",

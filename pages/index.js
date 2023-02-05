@@ -33,7 +33,13 @@ let {
   findAPortNotInUse,
 } = require('portscanner');
 
-import ping from 'tcp-ping';
+// // const dns = require('dns');
+// import * as dns from 'node-dns';
+// dns.lookupService('127.0.0.1', 22, (err, hostname, service) => {
+//   console.log(hostname, service);
+//   // Prints: localhost ssh
+// });
+
 export default function Home({ ctx }) {
   return (
     <div className={styles.container}>
@@ -43,17 +49,7 @@ export default function Home({ ctx }) {
       <main>
         <section className={styles.footer}>Loading...</section>
 
-        <Form name="host">
-          <Form.Item label={'Hostname'}>
-            <Input name="hostname" id="port" />
-          </Form.Item>
-          <Form.Item label={'Port'}>
-            <Input name="port" id="port" />
-          </Form.Item>
-        </Form>
-        {/* <Drawer> */}
-
-        <div></div>
+        <div>1</div>
       </main>
     </div>
   );
